@@ -1,0 +1,42 @@
+{
+    "navigation":{
+        "home":"Inicio",
+        "about":"Sobre mi",
+        "contact":"Contacto",
+        "portafolio":"Portafolio"
+    },
+    "profile":{
+        "name":"Hola soy Deimer Hernandez",
+        "description":"Soy Desarrollador Full Stack y disfruto crear aplicaciones web",
+        "cta":"Charlemos"
+    },
+    "about":{
+        "title1":"¿Quien soy?",
+        "description":"Empecé mi carrera como profesor de programación hace dos años, estoy buscando una oportunidad para adquirir experiencia como desarrollador de software. actualmente estoy estudiando ingles y haciendo tareas mantenimiento en aplicaciones web de terceros.",
+        "title2":"Habilidades"
+    },
+    "portafolio":{
+        "title":"Portafolio",
+        "project_one":"Pagina web personal",
+        "project_one_description":"En este proyecto tomé en cuenta principios de diseño responsive y manejo de html, javascript y css.",
+        "project_two":"Encriptador de texto",
+        "project_two_description":"Desafío implementado en el programa educativo Oracle next.",
+        "project_three":"Buscador de peliculas",
+        "project_three_description":"Con este proyecto puse en práctica la gestión de componentes, rutas, librerías de terceros, scroll infinito y consumo de api.",
+        "cta":"Ver"
+    },
+    "contact":{
+        "title":"Charlemos",
+        "subtitle":"Cuéntame sobre tu proyecto",
+        "paragraph":"Vamos a crear algo juntos",
+        "form_title":"Enviame un mensaje",
+        "form_send":"Enviar mensaje",
+        "form_name":"Nombre completo",
+        "form_email":"Correo electronico",
+        "form_subject":"Asunto",
+        "form_text":"Mensaje"
+    },
+    "footer":{
+        "copy":"© Deimer Hernandez Todos los derechos reservados."
+    }
+}
