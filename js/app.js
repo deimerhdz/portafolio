@@ -10,7 +10,6 @@ $(document).ready(()=>{
        if (scroll > 70){
         //    $logo.addClass('logoOnOff');
            $cabecera.addClass('border');
-           console.log('hole',$cabecera);
        } else {
         //   $logo.removeClass('logoOnOff');
            $cabecera.removeClass('border');
