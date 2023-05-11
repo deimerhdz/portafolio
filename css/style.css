@@ -31,7 +31,14 @@ body{
     width: 100%;
     background-color: var(--white);
     z-index: 1000;
+    
     top: 0px;
+}
+.border{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.social:hover{
+    color: var(--lime-green);
 }
 .nav__flex{
   
@@ -49,7 +56,7 @@ body{
     margin: 0 auto;
     width: 90%;
     padding: 3em 1em;
-    box-shadow: 0 0 3px rgba(0,0,0,0.7);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
     background-color: var(--white);
     z-index: 1000;
     border-radius: 6px;
@@ -125,8 +132,13 @@ body{
     background-image: linear-gradient(to right,var(--lime-green),var(--bright-cyan));
     color: var(--white);
     text-decoration: none;
+    transition: transform 0.2s ease;
     font-weight: bold;
 }
+.cta:active{
+    transform: scale(0.96);
+}
+
 .cta--outline{
     padding: 1em 2em;
     background-color: var(--white);
@@ -356,6 +368,63 @@ body{
 button.cta{
     border: none;
 }
+.selected__lang{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: var(--dark-blue);
+}
+.selected__lang::before{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url('https://flagsapi.com/ES/flat/32.png');
+}
+.lang__menu ul {
+    background-color: var(--white);
+    margin: 0px;
+    position: absolute;
+    color: var(--dark-blue);
+    padding: 0px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    border: 1px solid --grayish-blue;
+    border-radius: 7px;
+    display: none;
+}
+.lang__menu ul li{
+   list-style: none;
+   display: flex;
+}
+.lang__menu ul li a{
+    width: 125px;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--dark-blue);
+ }
+ .lang__menu ul li a:hover{
+    background-color: var(--light-grayish-blue);
+ }
+ .lang__menu ul li a::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+ }
+ .es::before{
+    background-image: url('https://flagsapi.com/ES/flat/32.png');
+ }
+ .en::before{
+    background-image: url('https://flagsapi.com/US/flat/32.png');
+ }
+ .lang__menu:hover ul{
+    display: block;
+ }
 @media (min-width:768px){
     .nav__links{
         position: unset;

@@ -22,17 +22,27 @@
 <body>
     <header class="hero animate__animated animate__fadeIn">
 
-        <nav class="nav">
+        <nav class="nav" id="nav">
             <div class="container nav__flex">
                 <figure class="nav__logo">
                     Deimer Hernandez
                 </figure>
     
                 <div class="nav__links" id="menu">
-                    <a class="nav__link" href="#home">Home</a>
-                    <a class="nav__link" href="#about">About me</a>
-                    <a class="nav__link" href="#portafolio">Portafolio</a>
-                    <a class="nav__link" href="#contact">Contact</a>
+                    <a class="nav__link" data-section="navigation"  data-value="home" href="#home">Home</a>
+                    <a class="nav__link" data-section="navigation"  data-value="about"href="#about">About me</a>
+                    <a class="nav__link" data-section="navigation"  data-value="portafolio"href="#portafolio">Portafolio</a>
+                    <a class="nav__link" data-section="navigation"  data-value="contact"href="#contact">Contact</a>
+                </div>
+                
+                <div class="lang__menu">
+                    <div class="selected__lang"  id="selected_lang">
+                        English
+                    </div>
+                    <ul id="flags">
+                        <li data-language="en"><a href="#" class="en">English</a></li>
+                        <li data-language="es"><a href="#" class="es">Spanish</a></li>
+                    </ul>
                 </div>
                 <a href="#menu" class="nav__menu" id="button_menu">
                     <i class="fas fa-regular fa-bars"></i>
@@ -44,8 +54,8 @@
         <section class="hero__main" id="home">
             <div class="hero__background"></div>
             <div class="hero__text">
-                <h1 class="hero__title">Hello, i'm Deimer Hernandez</h1>
-                <h2 class="hero__paragrahp">
+                <h1 class="hero__title"     data-section="profile"  data-value="name">Hello, i'm Deimer Hernandez</h1>
+                <h2 class="hero__paragrahp" data-section="profile"  data-value="description">
                     I'm Full stack Developer and I enjoy create web applications
                 </h2>
                 <ul class="hero__social">
@@ -54,8 +64,8 @@
                     <li><a class="social"href="https://www.instagram.com/deimer_17/"  target="_blank"><i class="fas fa-brands fa-instagram"></i></a></li>
                 </ul>
                 <div class="hero__cta">
-                    <a href="" class="cta">Portafolio</a>
-                    <a href="" class="cta--outline">Let's talk</a>
+                    <a href="#portafolio" class="cta">Portafolio</a>
+                    <a href="#contact" data-section="profile"  data-value="cta" class="cta--outline">Let's talk</a>
                 </div>
             </div>
 
@@ -69,13 +79,13 @@
                     <figure class="about__image">
                         <img class="image" src="./img/abot_me.svg" alt="about-me-ilustration">
                     </figure>
-                    <h2 class="title">Who I am?</h2>
-                    <p class="about__paragraph">
+                    <h2 class="title" data-section="about"  data-value="title1">Who I am?</h2>
+                    <p class="about__paragraph" data-section="about"  data-value="description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, nemo modi, blanditiis facere praesentium quam perspiciatis ratione aliquam ab fuga id odio quisquam velit, minus quaerat. Deleniti officiis cum animi.
                     </p>
                 </div>
                 <div>
-                    <h2 class="title">Skills</h2>
+                    <h2 class="title" data-section="about"  data-value="title2">Skills</h2>
                     <ul class="about__skils">
                         <li class="about__skill__item">
                             <img src="./img/icons/java.png" alt="">
@@ -123,7 +133,7 @@
 
         <section class="portafolio">
             <div class="portafolio__container container" id="portafolio">
-                <h2 class="title">Portafolio</h2>
+                <h2 class="title" data-section="portafolio"  data-value="title">Portafolio</h2>
 
                 <div class="projects__content">
                     <div class="projects__project">
@@ -131,8 +141,8 @@
                         <img class="projects__img" src="./img/project__1.png" alt="project__1">
                        
                         <div class="projects__texts">
-                            <h2 class="projects__title">Portafolio web</h2>
-                            <p class="projects__paragraph">in this project I took into account principles of responsive design and handling of html, javascript and css.</p>
+                            <h2 class="projects__title" data-section="portafolio"  data-value="project_one">Portafolio web</h2>
+                            <p class="projects__paragraph" data-section="portafolio"  data-value="project_one_description">In this project I took into account principles of responsive design and handling of html, javascript and css.</p>
                             <ul class="projects__skills">
                                 <li class="projects__skill">
                                     <img src="./img/icons/html5.png" class="img__skill" alt="html5">
@@ -145,8 +155,8 @@
                                 </li>
                             </ul>
                             <div class="project__cta">
-                                <a href="" class="cta" target="_blank">Github</a>
-                                <a href="" class="cta" target="_blank">Watch</a>
+                                <a href="" class="cta"  target="_blank">Github</a>
+                                <a href="" class="cta" data-section="portafolio"  data-value="cta" target="_blank">Watch</a>
                             </div>
                         </div>
                     </div>
@@ -155,8 +165,8 @@
                         <img class="projects__img" src="./img/project_2.png" alt="project__1">
                        
                         <div class="projects__texts">
-                            <h2 class="projects__title">Text encryptor</h2>
-                            <p class="projects__paragraph">Challenge implemented in the Oracle next education program.</p>
+                            <h2 class="projects__title" data-section="portafolio"  data-value="project_two">Text encryptor</h2>
+                            <p class="projects__paragraph" data-section="portafolio"  data-value="project_two_description">Challenge implemented in the Oracle next education program.</p>
                             <ul class="projects__skills">
                                 <li class="projects__skill">
                                     <img src="./img/icons/html5.png" class="img__skill" alt="html5">
@@ -170,7 +180,7 @@
                             </ul>
                             <div class="project__cta">
                                 <a href="https://github.com/deimerhdz/text-encryptor" class="cta" target="_blank">Github</a>
-                                <a href="https://deimerhdz.github.io/text-encryptor/" target="_blank" class="cta">Watch</a>
+                                <a href="https://deimerhdz.github.io/text-encryptor/" data-section="portafolio"  data-value="cta" target="_blank" class="cta">Watch</a>
                             </div>
                            
                         </div>
@@ -180,8 +190,8 @@
                         <img class="projects__img" src="./img/project_3.png" alt="project__1">
                        
                         <div class="projects__texts">
-                            <h2 class="projects__title">movie search engine</h2>
-                            <p class="projects__paragraph">With this project I put into practice the management of components, routes, third-party libraries, infinite scroll and api consumption.</p>
+                            <h2 class="projects__title" data-section="portafolio"  data-value="project_three">movie search engine</h2>
+                            <p class="projects__paragraph" data-section="portafolio"  data-value="project_three_description">With this project I put into practice the management of components, routes, third-party libraries, infinite scroll and api consumption.</p>
                             <ul class="projects__skills">
                                 <li class="projects__skill">
                                     <img src="./img/icons/html5.png" class="img__skill" alt="html5">
@@ -198,7 +208,7 @@
                             </ul>
                             <div class="project__cta">
                                 <a href="https://github.com/deimerhdz/text-encryptor" class="cta" target="_blank">Github</a>
-                                <a href="https://tourmaline-creponne-d29957.netlify.app/" target="_blank" class="cta">Watch</a>
+                                <a href="https://tourmaline-creponne-d29957.netlify.app/" data-section="portafolio"  data-value="cta" target="_blank" class="cta">Watch</a>
                             </div>
                            
                         </div>
@@ -206,12 +216,12 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact__container container">
                 <div class="contact__info">
-                    <h2 class="contact__title">Let's chat.</h2>
-                    <h2 class="contact__title">Tell me about your project</h2>
-                    <p class="contact__paragraph">Let's create somtimes together</p>
+                    <h2 class="contact__title" data-section="contact"  data-value="title">Let's chat</h2>
+                    <h2 class="contact__title" data-section="contact"  data-value="subtitle">Tell me about your project</h2>
+                    <p class="contact__paragraph" data-section="contact"  data-value="paragraph">Let's create somtimes together</p>
                     <div class="contact__card">
                         <div class="contact__icon">
                             <i class="fas fa-light fa-envelope"></i>
@@ -220,26 +230,26 @@
                     </div>
                 </div>
                 <div class="contact__form">
-                    <h2 class="contact__title">Send us a message</h2>
+                    <h2 class="contact__title" data-section="contact"  data-value="form_title">Send us a message</h2>
                     <form class="form">
                         <div class="form__group">
-                            <label for="name">Full name</label>
+                            <label for="name" data-section="contact"  data-value="form_name">Full name</label>
                             <input class="form__input" id="name" type="text" placeholder="Full name" >
                         </div>
                         <div class="form__group">
-                            <label for="name">Email</label>
+                            <label for="name" data-section="contact"  data-value="form_email">Email</label>
                             <input class="form__input" id="name" type="text" placeholder="Email address" >
                         </div>
                         <div class="form__group">
-                            <label for="name">Subject</label>
+                            <label for="name" data-section="contact"  data-value="form_subject">Subject</label>
                             <input class="form__input" id="name" type="text" placeholder="Subject" >
                         </div>
                         <div class="form__group">
-                            <label for="name">Tell us about your project</label>
+                            <label for="name" data-section="contact"  data-value="form_text">Tell us about your project</label>
                             <textarea class="form__input" id="name" type="text" rows="5"></textarea>
                         </div>
-                        <div class="form__group">
-                            <button type="submit" class="cta">Send message</button>
+                        <div class="form__group" >
+                            <button type="submit" class="cta" data-section="contact"  data-value="form_send">Send message</button>
                         </div>
                     </form>
                 </div>
@@ -255,12 +265,12 @@
                <a href="#" class="footer__media"><i class="fas fa-brands fa-instagram"></i></a>
             </div>
             <nav class="footer__nav">
-                <a class="footer__link" href="#home">Home</a>
-                <a class="footer__link" href="#about">About me</a>
-                <a class="footer__link" href="#portafolio">Portafolio</a>
-                <a class="footer__link" href="#contact">Contact</a>
+                <a class="footer__link" data-section="navigation"  data-value="home"      href="#home">Home</a>
+                <a class="footer__link" data-section="navigation"  data-value="about"     href="#about">About me</a>
+                <a class="footer__link" data-section="navigation"  data-value="portafolio"href="#portafolio">Portafolio</a>
+                <a class="footer__link" data-section="navigation"  data-value="contact"   href="#contact">Contact</a>
             </nav>
-            <p class="copy"> &copy; Deimer Hernandez All Rights Reserved.</p>
+            <p class="copy" data-section="footer"  data-value="copy"> &copy; Deimer Hernandez All Rights Reserved.</p>
         </section>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
