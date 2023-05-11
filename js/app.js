@@ -39,7 +39,7 @@ $(document).ready(()=>{
     })
     
     const changeLanguage = async language =>{
-        const requestJson = await fetch(`/languages/${language}.json`);
+        const requestJson = await fetch(`./languages/${language}.json`);
         const texts = await requestJson.json();
         for(let textToChange of textsToChange){
             const section = textToChange.dataset.section;
