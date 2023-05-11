@@ -1,6 +1,6 @@
 $(document).ready(()=>{
-    $('#menu').click(function(){
-        $( '#menu-options' ).toggleClass( "show" );
+    $('#button_menu').click(function(){
+        $( '#menu' ).toggleClass( "show" );
     })
 
     var $cabecera = $('#nav');
