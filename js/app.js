@@ -1,6 +1,10 @@
 $(document).ready(()=>{
 
+    var buttonMenu = $('#button_menu');
    
+    buttonMenu.click(()=>{
+        $('.nav__links').toggleClass('show');
+    })
     var $cabecera = $('#nav');
     // var $logo = $('#logo');
     var previousScroll = 0;
