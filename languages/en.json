@@ -6,11 +6,11 @@
         "portafolio":"Portafolio"
     },
     "profile":{
-        "name":"Hello, i'm Deimer Hernandez",
+        "name":"Hello, I'm Deimer Hernandez",
         "description":"I'm Full stack Developer and I enjoy create web applications"
     },
     "about":{
-        "title1":"Who I am?",
+        "title1":"About me",
         "description":"I started my trajectory as programming teacher  two years ago, I'm looking for an opportunity to gain experience as a software developer. I am currently studying English and doing homework maintenance in third-party web applications.",
         "title2":"Skills"
     },
