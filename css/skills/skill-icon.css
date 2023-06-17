@@ -1,0 +1,10 @@
+.skill__icon{
+    font-size: 2.5rem;
+    color: var(--bg-primary);
+    background-color: var(--bg-body-light);
+    align-self: flex-start;
+    padding: 0.5rem;
+    border-radius: 8px;
+    display: block;
+   margin: 0 auto;
+}

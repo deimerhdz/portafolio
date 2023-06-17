@@ -1,0 +1,23 @@
+
+.proyecto__item{
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+@media screen and (min-width:0) {
+    .proyecto__item{
+        flex-direction: column;
+        
+    }
+}
+
+@media screen and (min-width:480px) {
+ 
+    .proyecto__item{
+        flex-direction: row;
+        
+    }
+    .proyecto__item--reverse{
+        flex-direction: row-reverse;
+    }
+}
