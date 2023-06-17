@@ -9,6 +9,7 @@
 @media screen and (min-width:0) {
     .banner{
         flex-direction: column-reverse;
+        justify-content: center;
     }
 }
 
