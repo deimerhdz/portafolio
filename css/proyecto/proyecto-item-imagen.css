@@ -1,0 +1,14 @@
+
+
+@media screen and (min-width:0) {
+    .proyecto__item__imagen{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:480px) {
+ 
+    .proyecto__item__imagen{
+        width: 50%;
+    }
+}

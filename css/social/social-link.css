@@ -1,0 +1,27 @@
+.social__link{
+    text-decoration: none;
+    color: var(--bg-font);
+    transition: all 0.3s ease;
+}
+
+.social__link:hover{
+    color: var(--bg-primary);
+}
+@media screen and (min-width:0) {
+    .social__link--icon{
+      display: none;
+    }
+    .social__link--mobile{
+        font-size: 24px;
+        display: block;
+      }
+}
+
+@media screen and (min-width:700px) {
+    .social__link--icon{
+        display: block;
+      }
+    .social__link--mobile{
+        display: none;
+      }
+}

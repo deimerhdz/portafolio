@@ -1,0 +1,17 @@
+.proyecto__item__descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+@media screen and (min-width:0) {
+    .proyecto__item__descripcion{
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width:480px) {
+    .proyecto__item__descripcion{
+        margin-left: 1rem;
+    }
+}

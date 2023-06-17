@@ -1,0 +1,17 @@
+.social{
+    display: flex;
+}
+
+@media screen and (min-width:0) {
+    .social{
+        gap: 16px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .social{
+        gap: 32px;
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,27 @@
+.skill__item{
+    background: var(--bg-body);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 8px;
+    border-radius: 4px;
+}
+
+@media screen and (min-width:0) {
+    .skill__item{
+        width: 40%;
+        height: 140px;
+        margin: 5%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .skill__item{
+        width: 176px;
+        height: 140px;
+       
+        margin: 0;
+    }
+}

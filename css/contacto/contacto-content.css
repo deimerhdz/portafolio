@@ -1,0 +1,17 @@
+.contacto__content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width:0) {
+    .contacto__content{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .contacto__content{
+        flex-direction: row;
+    }
+}

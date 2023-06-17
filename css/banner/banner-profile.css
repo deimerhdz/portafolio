@@ -1,0 +1,21 @@
+.banner__profile{
+   
+    border-radius: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+@media screen and (min-width:0) {
+    .banner__profile{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .banner__profile{
+        height: 368px;
+        width: 368px;
+    }
+}

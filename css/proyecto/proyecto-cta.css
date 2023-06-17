@@ -1,0 +1,27 @@
+.proyecto__cta{
+    margin-top: 2rem;
+}
+
+@media screen and (min-width:0px) {
+ 
+    .proyecto__cta{
+        display: block;
+    }
+}
+@media screen and (min-width:480px) {
+ 
+    .proyecto__cta{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      
+    }
+}
+@media screen and (min-width:700px) {
+ 
+    .proyecto__cta{
+      
+        display: block;
+    }
+}

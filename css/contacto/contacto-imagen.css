@@ -1,0 +1,28 @@
+.contacto__image{
+    display: flex;
+    align-items: center;
+}
+
+.image{
+    display: block;
+ 
+    margin: 0 auto;
+}
+
+@media screen and (min-width:0) {
+    .contacto__image{
+        width: 100%;
+    }
+    .image{
+        width: 150px;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .contacto__image{
+        width: 50%;
+    }
+    .image{
+        width: 300px;
+    }
+}
