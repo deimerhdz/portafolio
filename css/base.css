@@ -45,6 +45,9 @@ h2.titulo {
 nav.bg-secondary{
     background: var(--bg-secondary);
 }
+input#nav-check{
+    display: none;
+}
 @media screen and (min-width:0) {
     .container{
         width: 100%;
@@ -65,6 +68,12 @@ nav.bg-secondary{
         padding: 0.5rem 0;
         text-align: center;
     }
+
+    input#nav-check:checked ~ .nav__list {
+        height: calc(100vh - 50px);
+      
+    }
+
 }
 
 @media screen and (min-width:700px) {
@@ -80,4 +89,5 @@ nav.bg-secondary{
     h3.titulo{
         text-align: left;
     }
+   
 }

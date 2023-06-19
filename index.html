@@ -66,15 +66,16 @@
     <nav class="nav" id="nav">
         <div class="container">
             <a href="" class="nav__logo">Deimer Hernandez</a>
+            <input type="checkbox" id="nav-check">
             <div class="nav__list">
-               <a class="nav__link" href="#inicio">Inicio</a>
-                <a class="nav__link" href="#skills"> Skill & Hobbies</a>
+               <label for="nav-check"><a class="nav__link" href="#inicio">Inicio</a></label> 
+                <a class="nav__link" href="#skills"> Skill</a>
                 <a class="nav__link" href="#proyectos">Proyectos</a>
                 <a class="nav__link" href="#contacto">Contacto</a>
             </div>
-            <button class="boton boton--menu" id="boton-menu">
+            <label class="boton boton--menu" id="boton-menu" for="nav-check">
                 <iconify-icon icon="ri:menu-4-line" class="icon"></iconify-icon>
-            </button>
+            </label>
         </div>
         
     </nav>
