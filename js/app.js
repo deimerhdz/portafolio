@@ -6,7 +6,7 @@ $(document).ready(()=>{
     //     $('.nav__list').toggleClass('show');
     // })
     let links = $(".nav__link");
-    console.log(links);
+    
     for(let link of links){
         
         $(link).click(()=>{
