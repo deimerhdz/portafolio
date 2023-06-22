@@ -1,25 +1,12 @@
 $(document).ready(()=>{
-
-    // var buttonMenu = $('#boton-menu');
-   
-    // buttonMenu.click(()=>{
-    //     $('.nav__list').toggleClass('show');
-    // })
     let links = $(".nav__link");
-    
     for(let link of links){
-        
         $(link).click(()=>{
-
             $("#nav-check").prop("checked", false)
-            console.log("hola");
         })
     }
-  
     var $cabecera = $('#nav');
-    // var $logo = $('#logo');
     var previousScroll = 0;
-   
     $(window).scroll(function(event){
        var scroll = $(this).scrollTop();
        if (scroll > 70){
