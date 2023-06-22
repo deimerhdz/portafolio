@@ -21,10 +21,9 @@ body{
     background-color: var(--bg-body);
 }
 .container{
-  
+    max-width: 1224px;
     margin:0 auto;
     overflow: hidden;
-    
 }
 .mb-2{
     margin-bottom: 2rem;
@@ -65,7 +64,7 @@ input#nav-check{
 
     h2.titulo{
         font-size: 1.3rem;
-        padding: 0.5rem 0;
+        padding: 1.5rem 0;
         text-align: center;
     }
 
