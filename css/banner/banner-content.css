@@ -1,4 +1,11 @@
 .banner__content{
     display: flex;
     flex-direction: column;
+    width: 50%;
+}
+
+@media screen and (min-width:0) {
+    .banner__content{
+        width: 100%;
+    }
 }

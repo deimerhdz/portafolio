@@ -14,11 +14,13 @@
 @media screen and (min-width:0) {
     .skills .container{
         flex-wrap: wrap;
+        
     }
 }
 
-@media screen and (min-width:700px) {
+@media screen and (min-width:768px) {
     .skills .container{
+      
         flex-direction: row;
     }
 }
