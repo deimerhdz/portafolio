@@ -21,10 +21,9 @@ body{
     background-color: var(--bg-body);
 }
 .container{
-  
+    max-width: 1224px;
     margin:0 auto;
     overflow: hidden;
-    
 }
 .mb-2{
     margin-bottom: 2rem;
