@@ -1,0 +1,10 @@
+.proyecto__item__tecnologies{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.proyecto__item__tecnologies p{
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+}

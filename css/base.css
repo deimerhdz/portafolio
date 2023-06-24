@@ -25,6 +25,32 @@ body{
     margin:0 auto;
     overflow: hidden;
 }
+.java{
+    background: white;
+    text-decoration: underline #2e6ab2;
+    color: #e52b2e;
+   
+}
+.javascript{
+   background: #efd81d;
+
+   color: black;
+}
+.spring-boot{
+    background: #6cb52d;
+ 
+}
+.html{
+    background: #e86a32;
+ 
+}
+.css{
+    background: #2862e9;
+}
+.angular{
+    background: #b52e31;
+  
+}
 .mb-2{
     margin-bottom: 2rem;
 }

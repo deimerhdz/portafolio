@@ -4,6 +4,9 @@
     gap: 2rem;
     margin-top: 3rem;
 }
+.proyecto__item .proyecto__item__info{
+    line-height: 2rem;
+}
 @media screen and (min-width:0) {
     .proyecto__item{
         flex-direction: column;
