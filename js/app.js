@@ -21,7 +21,7 @@ $(document).ready(()=>{
 
     function loadSkill(){
         let template = ``;
-        fetch('/data/skill.json')
+        fetch('https://raw.githubusercontent.com/deimerhdz/portafolio/master/data/skill.json')
         .then(data=>data.json())
         .then(({skills})=>{
             skills.forEach(skill => {
@@ -46,7 +46,7 @@ $(document).ready(()=>{
     }
     function loadProject(){
         let template = ``;
-        fetch('/data/projects.json')
+        fetch('https://raw.githubusercontent.com/deimerhdz/portafolio/master/data/projects.json')
         .then(data=>data.json())
         .then(({projects})=>{
             projects.forEach((project,i) => {
