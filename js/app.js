@@ -18,4 +18,23 @@ $(document).ready(()=>{
     
        previousScroll = scroll;    
     });
+
+    function loadSkill(){
+        let template = ``;
+        fetch('/data/skill.json')
+        .then(data=>data.json())
+        .then(({skills})=>{
+           
+            skills.forEach(skill => {
+                template += `
+                <div class="skill__item">
+                <iconify-icon  class="skill__icon" icon="${skill.icon}"></iconify-icon>
+                <h3 class="skill__titulo">${skill.name}</h3>
+                </div>
+                `
+            });
+            $('#skills-content').html(template)
+        })
+    }
+    loadSkill()
 })
