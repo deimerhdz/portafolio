@@ -24,7 +24,6 @@ $(document).ready(()=>{
         fetch('/data/skill.json')
         .then(data=>data.json())
         .then(({skills})=>{
-           
             skills.forEach(skill => {
                 template += `
                 <div class="skill__item">
@@ -36,5 +35,61 @@ $(document).ready(()=>{
             $('#skills-content').html(template)
         })
     }
-    loadSkill()
+
+    function showTecnologies(tecnologies,classes){
+        let template=``;
+       
+        tecnologies.forEach((tecnology,i)=>{
+            template+=`<p class="${classes[i]}">${tecnology}</p>`
+        })
+        return template;
+    }
+    function loadProject(){
+        let template = ``;
+        fetch('/data/projects.json')
+        .then(data=>data.json())
+        .then(({projects})=>{
+            projects.forEach((project,i) => {
+                if(i%2 == 0){
+                    template += `
+                    <div class="proyecto__item proyecto__item--reverse mb-2">
+                    <img class="proyecto__item__imagen" src="${project.img}" alt="${project.title}"/>
+                    <div class="proyecto__item__descripcion">
+                        <h3 class="titulo">${project.title}</h3>
+                        <p class="proyecto__item__info">${project.description}</p>
+                        <div class="proyecto__item__tecnologies" >
+                            ${ showTecnologies(project.tecnologies,project.class)}
+                        </div>
+                        <div class="proyecto__cta">
+                            <a href="${project.repository}" target="_blank" class="boton boton--secondary">Repositorio</a>
+                            <a href="${project.demo}" target="_blank" class="boton boton--primary">Ver demo</a>
+                        </div>
+                    </div>
+                </div>
+                    `
+                }else{
+                    template += `
+                    <div class="proyecto__item">
+                    <img class="proyecto__item__imagen" src="${project.img}" alt="${project.title}"/>
+                    <div class="proyecto__item__descripcion">
+                        <h3 class="titulo">${project.title}</h3>
+                        <p class="proyecto__item__info">${project.description}</p>
+                        <div class="proyecto__item__tecnologies" >
+                            ${ showTecnologies(project.tecnologies,project.class)}
+                        </div>
+                        <div class="proyecto__cta">
+                            <a href="${project.repository}" target="_blank" class="boton boton--secondary">Repositorio</a>
+                            <a href="${project.demo}" target="_blank" class="boton boton--primary">Ver demo</a>
+                        </div>
+                    </div>
+                </div>
+                    `
+                }
+                
+            });
+            $('#proyecto-content').html(template)
+        })
+    }
+    loadSkill();
+    loadProject();
 })
