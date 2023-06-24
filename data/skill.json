@@ -1,0 +1,36 @@
+{
+   "skills": [    
+    {  
+        "icon":"ant-design:html5-filled",
+        "name":"Html5"
+    },
+    {  
+        "icon":"bxl:css3",
+        "name":"Css3"
+    },
+    {  
+        "icon":"bxl:javascript",
+        "name":"Javascript"
+    },
+    {  
+        "icon":"devicon-plain:angular",
+        "name":"Angular"
+    },
+    {  
+        "icon":"fe:git",
+        "name":"Git"
+    },
+    {  
+        "icon":"la:java",
+        "name":"Java"
+    }, 
+    {  
+        "icon":"simple-icons:mysql",
+        "name":"Mysql"
+    },  
+    {  
+        "icon":"simple-icons:springboot",
+        "name":"Spring Boot"
+    }
+   ]
+}

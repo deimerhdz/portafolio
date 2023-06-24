@@ -5,275 +5,252 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio | Deimer Hernanez</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32"  href="./favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
-      </head>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalice.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- NAV -->
+    <link rel="stylesheet" href="./css/nav/nav.css">
+    <link rel="stylesheet" href="./css/nav/nav-list.css">
+    <link rel="stylesheet" href="./css/nav/nav-link.css">
+    <link rel="stylesheet" href="./css/nav/nav-logo.css">
+
+    <!-- BANNER -->
+    <link rel="stylesheet" href="./css/banner/banner.css">
+    <link rel="stylesheet" href="./css/banner/banner-content.css">
+    <link rel="stylesheet" href="./css/banner/banner-descripcion.css">
+    <link rel="stylesheet" href="./css/banner/banner-profile.css">
+    
+    <!-- SOCIAL -->
+    <link rel="stylesheet" href="./css/social/social.css">
+    <link rel="stylesheet" href="./css/social/social-link.css">
+
+    <!-- SKILLS -->
+    <link rel="stylesheet" href="./css/skills/skills.css">
+    <link rel="stylesheet" href="./css/skills/skill-item.css">
+    <link rel="stylesheet" href="./css/skills/skill-icon.css">
+    <link rel="stylesheet" href="./css/skills/skill-titulo.css">
+
+    <!-- PROYECTOS -->
+    <link rel="stylesheet" href="./css/proyecto/proyecto-content.css">
+    <link rel="stylesheet" href="./css/proyecto/proyecto-item.css">
+    <link rel="stylesheet" href="./css/proyecto/proyecto-item-imagen.css">
+    <link rel="stylesheet" href="./css/proyecto/proyecto-item-descripcion.css">
+    <link rel="stylesheet" href="./css/proyecto/proyecto-item-tecnologies.css">
+    <link rel="stylesheet" href="./css/proyecto/proyecto-cta.css">
+
+    <!-- BOTON -->
+    <link rel="stylesheet" href="./css/boton/boton.css">
+  
+    <!-- CONTACTO -->
+    <link rel="stylesheet" href="./css/contacto/contacto.css">
+    <link rel="stylesheet" href="./css/contacto/contacto-content.css">
+    <link rel="stylesheet" href="./css/contacto/contacto-imagen.css">
+    <link rel="stylesheet" href="./css/contacto/contacto-form.css">
+
+    <!-- FORM -->
+    <link rel="stylesheet" href="./css/form/form.css">
+   
+    <link rel="stylesheet" href="./css/form/form-descripcion.css">
+    <link rel="stylesheet" href="./css/form/form-input.css">
+    <link rel="stylesheet" href="./css/form/form-group.css">
+    <!-- FORMACION -->
+    <link rel="stylesheet" href="./css/formacion/formacion.css">
+    <!-- FOOTER -->
+    <link rel="stylesheet" href="./css/footer/footer__text.css">
+    <!-- CARD -->
+    <link rel="stylesheet" href="./css/card/card.css">
+    <link rel="stylesheet" href="./css/card/card-image.css">
+    <link rel="stylesheet" href="./css/card/card-content.css">
 </head>
 <body>
-    <header class="hero animate__animated animate__fadeIn">
+    <nav class="nav" id="nav">
+        <div class="container">
+            <a href="" class="nav__logo">Deimer Hernandez</a>
+            <input type="checkbox" id="nav-check">
+            <div class="nav__list">
+               <label for="nav-check"><a class="nav__link" href="#inicio">Inicio</a></label> 
+                <a class="nav__link" href="#skills"> Habilidades</a>
+                <a class="nav__link" href="#proyectos">Proyectos</a>
+                <a class="nav__link" href="#contacto">Contacto</a>
+            </div>
+            <label class="boton boton--menu" id="boton-menu" for="nav-check">
+                <iconify-icon icon="ri:menu-4-line" class="icon"></iconify-icon>
+            </label>
+        </div>
+        
+    </nav>
 
-        <nav class="nav" id="nav">
-            <div class="container nav__flex">
-                <figure class="nav__logo">
-                    Deimer Hernandez
-                </figure>
-    
-                <div class="nav__links" id="menu">
-                    <a class="nav__link" data-section="navigation"  data-value="home" href="#home">Home</a>
-                    <a class="nav__link" data-section="navigation"  data-value="about"href="#about">About me</a>
-                    <a class="nav__link" data-section="navigation"  data-value="portafolio"href="#portafolio">Portafolio</a>
-                    <a class="nav__link" data-section="navigation"  data-value="contact"href="#contact">Contact</a>
-                </div>
-                
-                <div class="lang__menu">
-                    <div class="selected__lang"  id="selected_lang">
-                        English
-                    </div>
-                    <ul id="flags">
-                        <li data-language="en"><a href="#" class="en">English</a></li>
-                        <li data-language="es"><a href="#" class="es">Spanish</a></li>
-                    </ul>
-                </div>
-                <a href="#menu" class="nav__menu" id="button_menu">
-                    <i class="fas fa-regular fa-bars"></i>
+    <header class="banner container animate__animated animate__fadeInDown" id="inicio">
+        <div class="banner__content">
+            <h1 class="titulo">Hola mi nombre es <br> Deimer Hernandez  <i class="em em-wave" aria-role="presentation" aria-label="BIRD"></i> </h1>
+            <p class="banner__descripcion">Soy ingeniero de sistemas, apasionado por el desarrollo de aplicaciones web, me gusta hacer ejercicio, jugar video juegos e ir de pesca. Actualmente estudio ingles y estoy participando en el proyecto Oracle One en Alura Latam.</p>
+            <div class="social">
+                <a href="https://github.com/deimerhdz" target="_blank" class="social__link">
+                    <span class="social__link--icon">Github 
+                        <iconify-icon icon="iconoir:arrow-tr"></iconify-icon>
+                    </span>
+                    <iconify-icon class="social__link--mobile" icon="uil:github"></iconify-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/deimer-hernandez23/" target="_blank" class="social__link">
+                    <span class="social__link--icon">Linkedin
+                        <iconify-icon icon="iconoir:arrow-tr"></iconify-icon>
+                    </span>
+                    <iconify-icon class="social__link--mobile" icon="uil:linkedin"></iconify-icon>
+                  
+                </a>
+                <a href="https://www.instagram.com/deimer_17/" target="_blank" class="social__link">
+                    <span class="social__link--icon">Instagram
+                        <iconify-icon icon="iconoir:arrow-tr"></iconify-icon>
+                    </span>
+                    <iconify-icon class="social__link--mobile" icon="uil:instagram"></iconify-icon>
+                </a>
+                <a href="https://drive.google.com/file/d/1dG-N9n6GxLF-jC8L4i5uHeRVkFpOQeRc/view?usp=sharing" target="_blank" class="social__link">
+                    <span class="social__link--icon">Curriculum 
+                        <iconify-icon icon="iconoir:arrow-tr"></iconify-icon>
+                    </span>
+                    <iconify-icon  class="social__link--mobile"icon="pepicons-pencil:cv"></iconify-icon>
+                    
                 </a>
             </div>
-            
-        </nav>
-
-        <section class="hero__main" id="home">
-            <div class="hero__background"></div>
-            <div class="hero__text">
-                <h1 class="hero__title"     data-section="profile"  data-value="name">Hello, i'm Deimer Hernandez</h1>
-                <h2 class="hero__paragrahp" data-section="profile"  data-value="description">
-                    I'm Full stack Developer and I enjoy create web applications
-                </h2>
-                <ul class="hero__social">
-                    <li><a class="social"href="https://www.linkedin.com/in/deimer-hernandez23/"  target="_blank"><i class="fas fa-brands fa-linkedin-in"></i></a></li>
-                    <li><a class="social"href="https://github.com/deimerhdz" target="_blank"><i class="fas fa-brands fa-github"></i></a></li>
-                    <li><a class="social"href="https://www.instagram.com/deimer_17/"  target="_blank"><i class="fas fa-brands fa-instagram"></i></a></li>
-                </ul>
-                <div class="hero__cta">
-                    <a href="#portafolio" class="cta">Portafolio</a>
-                    <a href="#contact" data-section="profile"  data-value="cta" class="cta--outline">Let's talk</a>
-                </div>
-            </div>
-
-        </section>
+        </div>
+        <img src="./img/perfil.png" alt="Foto de perfil" class="banner__profile">
     </header>
 
-    <main class="main">
-        <section class="about" id="about">
-            <div class="about__container container">
-                <div>
-                    <figure class="about__image">
-                        <img class="image" src="./img/abot_me.svg" alt="about-me-ilustration">
-                    </figure>
-                    <h2 class="title" data-section="about"  data-value="title1">Who I am?</h2>
-                    <p class="about__paragraph" data-section="about"  data-value="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, nemo modi, blanditiis facere praesentium quam perspiciatis ratione aliquam ab fuga id odio quisquam velit, minus quaerat. Deleniti officiis cum animi.
-                    </p>
+    <section class="formacion ">
+        <h2 class="titulo">Formacion academica</h2>
+        <div class="container">
+            <div class="card">
+                <figure class="card__image">
+                    <img src="./img/icons/logo-unicordoba.png" alt="logo universidad de cordoba" class="image">
+                </figure>
+                <div class="card__content">
+                    <h3>Pregado en Ingenieria de sistema</h3>
+                    <p> 2022 - Universidad de Córdoba </p>
                 </div>
-                <div>
-                    <h2 class="title" data-section="about"  data-value="title2">Skills</h2>
-                    <ul class="about__skils">
-                        <li class="about__skill__item">
-                            <img src="./img/icons/java.png"  class="img__skill" alt="icon-java">
-                            <p class="about__skill">Java</p>
-                        </li>
-                        <li class="about__skill__item">
-                            <img src="./img/icons/spring_boot.png" class="img__skill" alt="icon-spring-boot">
-                            <p class="about__skill">Spring boot</p>
-                        </li>
-                        <li class="about__skill__item">
-                            <img src="./img/icons/javascript.png" class="img__skill"  alt="icon-javascript">
-                            <p class="about__skill">Javascript</p>
-                        </li>
-                        <li class="about__skill__item">
-                            <img src="./img/icons/angular.png" class="img__skill"  alt="icon-Angular">
-                            <p class="about__skill">Angular</p>
-                        </li>
-                        <li class="about__skill__item">
-                            <img src="./img/icons/html5.png"  class="img__skill" alt="icon-html5">
-                            <p class="about__skill">Html5</p>
-                        </li>
-                        <li class="about__skill__item">
-                            <img src="./img/icons/css3.png" class="img__skill" alt="icon-css3">
-                            <p class="about__skill">Css3</p>
-                        </li>
-                        <li class="about__skill__item">
-                            <img src="./img/icons/git.png" class="img__skill"  alt="icon-git">
-                            <p class="about__skill">Git</p>
-                        </li>
-                        <li class="about__skill__item">
-                            <img src="./img/icons/jira.png" class="img__skill" alt="icon-jira">
-                            <p class="about__skill">Jira</p>
-                        </li>
-                        <li class="about__skill__item">
-                            <img src="./img/icons/mysql.png" class="img__skill" alt="icon-Mysql">
-                            <p class="about__skill">MySql</p>
-                        </li>
-                    </ul>
-                </div>
-             
-
-            
+               
             </div>
-        </section>
-
-        <section class="portafolio">
-            <div class="portafolio__container container" id="portafolio">
-                <h2 class="title" data-section="portafolio"  data-value="title">Portafolio</h2>
-
-                <div class="projects__content">
-                    <div class="projects__project">
-                      
-                        <img class="projects__img" src="./img/project__1.png" alt="project__1">
-                       
-                        <div class="projects__texts">
-                            <h2 class="projects__title" data-section="portafolio"  data-value="project_one">Portafolio web</h2>
-                            <p class="projects__paragraph" data-section="portafolio"  data-value="project_one_description">In this project I took into account principles of responsive design and handling of html, javascript and css.</p>
-                            <ul class="projects__skills">
-                                <li class="projects__skill">
-                                    <img src="./img/icons/html5.png" class="img__skill" alt="html5">
-                                </li>
-                                <li class="projects__skill">
-                                    <img src="./img/icons/css3.png" class="img__skill" alt="css3">
-                                </li>
-                                <li class="projects__skill">
-                                    <img src="./img/icons/javascript.png"  class="img__skill" alt="javascript">
-                                </li>
-                            </ul>
-                            <div class="project__cta">
-                                <a href="" class="cta"  target="_blank">Github</a>
-                                <a href="" class="cta" data-section="portafolio"  data-value="cta" target="_blank">Watch</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects__project">
-                      
-                        <img class="projects__img" src="./img/project_2.png" alt="project__1">
-                       
-                        <div class="projects__texts">
-                            <h2 class="projects__title" data-section="portafolio"  data-value="project_two">Text encryptor</h2>
-                            <p class="projects__paragraph" data-section="portafolio"  data-value="project_two_description">Challenge implemented in the Oracle next education program.</p>
-                            <ul class="projects__skills">
-                                <li class="projects__skill">
-                                    <img src="./img/icons/html5.png" class="img__skill" alt="html5">
-                                </li>
-                                <li class="projects__skill">
-                                    <img src="./img/icons/css3.png" class="img__skill" alt="css3">
-                                </li>
-                                <li class="projects__skill">
-                                    <img src="./img/icons/javascript.png" class="img__skill" alt="javascript">
-                                </li>
-                            </ul>
-                            <div class="project__cta">
-                                <a href="https://github.com/deimerhdz/text-encryptor" class="cta" target="_blank">Github</a>
-                                <a href="https://deimerhdz.github.io/text-encryptor/" data-section="portafolio"  data-value="cta" target="_blank" class="cta">Watch</a>
-                            </div>
-                           
-                        </div>
-                    </div>
-                    <div class="projects__project">
-                      
-                        <img class="projects__img" src="./img/project_3.png" alt="project__1">
-                       
-                        <div class="projects__texts">
-                            <h2 class="projects__title" data-section="portafolio"  data-value="project_three">movie search engine</h2>
-                            <p class="projects__paragraph" data-section="portafolio"  data-value="project_three_description">With this project I put into practice the management of components, routes, third-party libraries, infinite scroll and api consumption.</p>
-                            <ul class="projects__skills">
-                                <li class="projects__skill">
-                                    <img src="./img/icons/html5.png" class="img__skill" alt="html5">
-                                </li>
-                                <li class="projects__skill">
-                                    <img src="./img/icons/css3.png" class="img__skill" alt="css3">
-                                </li>
-                                <li class="projects__skill">
-                                    <img src="./img/icons/bootstrap.png" class="img__skill" alt="Bootstrap">
-                                </li>
-                                <li class="projects__skill">
-                                    <img src="./img/icons/angular.png" class="img__skill" alt="angular">
-                                </li>
-                            </ul>
-                            <div class="project__cta">
-                                <a href="https://github.com/deimerhdz/text-encryptor" class="cta" target="_blank">Github</a>
-                                <a href="https://tourmaline-creponne-d29957.netlify.app/" data-section="portafolio"  data-value="cta" target="_blank" class="cta">Watch</a>
-                            </div>
-                           
-                        </div>
-                    </div>
+            <div class="card">
+                <figure class="card__image">
+                    <img src="./img/icons/logo-alura.png" alt="" class="image">
+                </figure>
+                <div class="card__content">
+                    <h3>Formacion UX Desing</h3>
+                    <p> En curso - Alura </p>
                 </div>
             </div>
-        </section>
-        <section class="contact" id="contact">
-            <div class="contact__container container">
-                <div class="contact__info">
-                    <h2 class="contact__title" data-section="contact"  data-value="title">Let's chat</h2>
-                    <h2 class="contact__title" data-section="contact"  data-value="subtitle">Tell me about your project</h2>
-                    <p class="contact__paragraph" data-section="contact"  data-value="paragraph">Let's create somtimes together</p>
-                    <div class="contact__card">
-                        <div class="contact__icon">
-                            <i class="fas fa-light fa-envelope"></i>
-                        </div>
-                        <p class="contact__email"></p>
-                    </div>
-                </div>
-                <div class="contact__form">
-                    <h2 class="contact__title" data-section="contact"  data-value="form_title">Send us a message</h2>
-                    <form class="form">
+        </div>
+        
+    </section>
+
+    <section class="skills"  id="skills">
+        <h2 class="titulo">Skills</h2>
+        <div class="container" id="skills-content">
+        
+        </div>
+        <h2 class="titulo">Pasatiempos</h2>
+        <div class="container">
+            <div class="skill__item">
+                <iconify-icon  class="skill__icon" icon="bx:run"></iconify-icon>
+                <h3 class="skill__titulo">Correr</h3>
+            </div>
+            <div class="skill__item">
+                <iconify-icon  class="skill__icon" icon="bx:headphone"></iconify-icon>
+                <h3 class="skill__titulo">Oir musica</h3>
+            </div>
+            <div class="skill__item">
+                <iconify-icon  class="skill__icon" icon="fa:television"></iconify-icon>
+                <h3 class="skill__titulo">Ver series</h3>
+            </div>
+            <div class="skill__item">
+                <iconify-icon  class="skill__icon" icon="heroicons:language-20-solid"></iconify-icon>
+                <h3 class="skill__titulo">Aprender idiomas</h3>
+            </div>
+            <div class="skill__item">
+                <iconify-icon  class="skill__icon" icon="game-icons:boat-fishing"></iconify-icon>
+                <h3 class="skill__titulo">Pescar</h3>
+            </div>
+            <!-- 
+            <div class="skill__item">
+                <iconify-icon  class="skill__icon" icon="ant-design:html5-filled"></iconify-icon>
+                <h3 class="skill__titulo">Html5</h3>
+            </div> -->
+        </div>
+       
+    </section>
+
+
+    <section class="proyectos container" id="proyectos">
+        <h2 class="titulo">Experiencia profesional</h2>
+        <div class="proyecto__content" id="proyecto-content">
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <div class="contacto__content">
+                <figure class="contacto__image">
+                    <img class="image" src="./img/contact.svg" alt="" >
+
+                </figure>
+                <div class="contacto__form">
+                    <form class="form" autocomplete="off">
+                        <h2 class="titulo">Contacto</h2>
+                        <p class="form__descripcion">¿Quieres contactarme? <br>
+                            Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
                         <div class="form__group">
-                            <label for="name" data-section="contact"  data-value="form_name">Full name</label>
-                            <input class="form__input" id="name" type="text" placeholder="Full name" >
+                          
+                            <input class="form__input"type="text" required>
+                            <label class="form__label">
+                                <span class="form__label__text" > Nombre</span>
+                             </label>
                         </div>
                         <div class="form__group">
-                            <label for="name" data-section="contact"  data-value="form_email">Email</label>
-                            <input class="form__input" id="name" type="text" placeholder="Email address" >
+                            
+                            <input class="form__input"type="email" required>
+                            <label class="form__label" >
+                                <span class="form__label__text"> Email</span>
+                             </label>
                         </div>
                         <div class="form__group">
-                            <label for="name" data-section="contact"  data-value="form_subject">Subject</label>
-                            <input class="form__input" id="name" type="text" placeholder="Subject" >
+                           
+                            <input class="form__input"type="text" name="asunto" required>
+                            <label class="form__label"  >
+                                <span class="form__label__text"> Asunto</span>
+                             </label>
                         </div>
                         <div class="form__group">
-                            <label for="name" data-section="contact"  data-value="form_text">Tell us about your project</label>
-                            <textarea class="form__input" id="name" type="text" rows="5"></textarea>
+                          
+                            <textarea class="form__input form__input--area" col="10" rows="4" required ></textarea>
+                            <label class="form__label">
+                                <span class="form__label__text"> Mensaje</span>
+                             </label>
                         </div>
-                        <div class="form__group" >
-                            <button type="submit" class="cta" data-section="contact"  data-value="form_send">Send message</button>
-                        </div>
+
+                        <button class="boton boton--primary">Enviar mensaje</button>
                     </form>
                 </div>
+             
             </div>
-        </section>
-    </main>
+        </div>
+    
+    </section>
 
-    <footer class="footer">
-        <section class="footer__container container">
-            <div class="footer__socialmedia">
-               <a href="#" class="footer__media"><i class="fas fa-brands fa-linkedin-in"></i></a>
-               <a href="#" class="footer__media"><i class="fas fa-brands fa-github"></i></a>
-               <a href="#" class="footer__media"><i class="fas fa-brands fa-instagram"></i></a>
-            </div>
-            <nav class="footer__nav">
-                <a class="footer__link" data-section="navigation"  data-value="home"      href="#home">Home</a>
-                <a class="footer__link" data-section="navigation"  data-value="about"     href="#about">About me</a>
-                <a class="footer__link" data-section="navigation"  data-value="portafolio"href="#portafolio">Portafolio</a>
-                <a class="footer__link" data-section="navigation"  data-value="contact"   href="#contact">Contact</a>
-            </nav>
-            <p class="copy" data-section="footer"  data-value="copy"> &copy; Deimer Hernandez All Rights Reserved.</p>
-        </section>
+    <footer class="footer container">
+        <p class="foote__text">Desarrollado por Deimer Hernandez <span id="fecha"> </span> </p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <script>
+        let fechaActual = new Date().getFullYear()
+        document.getElementById('fecha').innerHTML = `${fechaActual}` 
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>

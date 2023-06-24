@@ -1,0 +1,10 @@
+.nav__logo{
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--bg-font);
+    transition: all 0.3s ease;
+}
+
+.nav__logo:hover{
+    color: var(--bg-primary);
+}

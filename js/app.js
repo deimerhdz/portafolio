@@ -1,57 +1,95 @@
 $(document).ready(()=>{
-
-    var buttonMenu = $('#button_menu');
-   
-    buttonMenu.click(()=>{
-        $('.nav__links').toggleClass('show');
-    })
+    let links = $(".nav__link");
+    for(let link of links){
+        $(link).click(()=>{
+            $("#nav-check").prop("checked", false)
+        })
+    }
     var $cabecera = $('#nav');
-    // var $logo = $('#logo');
     var previousScroll = 0;
-   
     $(window).scroll(function(event){
        var scroll = $(this).scrollTop();
        if (scroll > 70){
-        //    $logo.addClass('logoOnOff');
-           $cabecera.addClass('border');
+        
+           $cabecera.addClass('bg-secondary');
        } else {
-        //   $logo.removeClass('logoOnOff');
-           $cabecera.removeClass('border');
+           $cabecera.removeClass('bg-secondary');
        }
     
        previousScroll = scroll;    
     });
 
-    const flags = $('#flags li');
-    let textsToChange = $('[data-section]');
-    const selectedLang = $("#selected_lang");
-    flags.click((e)=>{
-        const lang =e.target.parentElement.dataset.language;
-        const selectedLang = $("#selected_lang");
-        if(lang=='es'){
-            selectedLang.text("Spanish");
-            selectedLang.removeClass('en')
-            selectedLang.addClass('es')
-        }else{
-            selectedLang.text("English");
-            selectedLang.removeClass('es')
-            selectedLang.addClass('en')
-
-        }
-        changeLanguage(lang);
-    })
-    
-    const changeLanguage = async language =>{
-        const requestJson = await fetch(`./languages/${language}.json`);
-        const texts = await requestJson.json();
-        for(let textToChange of textsToChange){
-            const section = textToChange.dataset.section;
-            const value = textToChange.dataset.value;
-            $(textToChange).text(texts[section][value]);
-        }
-     
+    function loadSkill(){
+        let template = ``;
+        fetch('/data/skill.json')
+        .then(data=>data.json())
+        .then(({skills})=>{
+            skills.forEach(skill => {
+                template += `
+                <div class="skill__item">
+                <iconify-icon  class="skill__icon" icon="${skill.icon}"></iconify-icon>
+                <h3 class="skill__titulo">${skill.name}</h3>
+                </div>
+                `
+            });
+            $('#skills-content').html(template)
+        })
     }
-    changeLanguage('es');
-    selectedLang.text("Spanish");
-    selectedLang.addClass('es')
+
+    function showTecnologies(tecnologies,classes){
+        let template=``;
+       
+        tecnologies.forEach((tecnology,i)=>{
+            template+=`<p class="${classes[i]}">${tecnology}</p>`
+        })
+        return template;
+    }
+    function loadProject(){
+        let template = ``;
+        fetch('/data/projects.json')
+        .then(data=>data.json())
+        .then(({projects})=>{
+            projects.forEach((project,i) => {
+                if(i%2 == 0){
+                    template += `
+                    <div class="proyecto__item proyecto__item--reverse mb-2">
+                    <img class="proyecto__item__imagen" src="${project.img}" alt="${project.title}"/>
+                    <div class="proyecto__item__descripcion">
+                        <h3 class="titulo">${project.title}</h3>
+                        <p class="proyecto__item__info">${project.description}</p>
+                        <div class="proyecto__item__tecnologies" >
+                            ${ showTecnologies(project.tecnologies,project.class)}
+                        </div>
+                        <div class="proyecto__cta">
+                            <a href="${project.repository}" target="_blank" class="boton boton--secondary">Repositorio</a>
+                            <a href="${project.demo}" target="_blank" class="boton boton--primary">Ver demo</a>
+                        </div>
+                    </div>
+                </div>
+                    `
+                }else{
+                    template += `
+                    <div class="proyecto__item">
+                    <img class="proyecto__item__imagen" src="${project.img}" alt="${project.title}"/>
+                    <div class="proyecto__item__descripcion">
+                        <h3 class="titulo">${project.title}</h3>
+                        <p class="proyecto__item__info">${project.description}</p>
+                        <div class="proyecto__item__tecnologies" >
+                            ${ showTecnologies(project.tecnologies,project.class)}
+                        </div>
+                        <div class="proyecto__cta">
+                            <a href="${project.repository}" target="_blank" class="boton boton--secondary">Repositorio</a>
+                            <a href="${project.demo}" target="_blank" class="boton boton--primary">Ver demo</a>
+                        </div>
+                    </div>
+                </div>
+                    `
+                }
+                
+            });
+            $('#proyecto-content').html(template)
+        })
+    }
+    loadSkill();
+    loadProject();
 })

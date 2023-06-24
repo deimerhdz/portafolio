@@ -1,0 +1,22 @@
+.banner{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  
+    gap: 32px;
+    
+}
+
+
+@media screen and (min-width:0) {
+    .banner{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+}
+@media screen and (min-width:769px) {
+    .banner{
+        flex-direction: row;
+        
+    }
+}

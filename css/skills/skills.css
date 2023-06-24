@@ -1,0 +1,26 @@
+.skills {
+    width: 100%;
+    padding: 2.5rem 0 0 0 ;
+    background-color: var(--bg-secondary);
+    
+}
+
+.skills .container{
+    display: flex;
+    gap: 1.5rem;
+}
+
+@media screen and (min-width:0) {
+    .skills .container{
+       
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .skills .container{
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+}

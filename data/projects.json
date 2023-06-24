@@ -1,0 +1,32 @@
+{
+    "projects":[
+        {
+            "img":"./img/project_1.png",
+            "title":"Sistema de encuestas",
+            "description":"Implementacion de buenas practicas como responsive desing, documentacion con swagger, pruebas unitarias , validaciones asincronas y mas!.",
+            "tecnologies":["Java","Spring Boot","Angular"],
+            "class":["java","spring-boot","angular"],
+            "repository":"https://github.com/deimerhdz/encuestas-api",
+            "demo":"https://64971258f4f5746ed39b5cc5--cosmic-faloodeh-a9ee8e.netlify.app/"
+        }
+        ,
+        {
+            "img":"./img/project_2.png",
+            "title":"Encriptador de texto",
+            "description":"Challenge Alura codificador del programa Oracle One.",
+            "tecnologies":["Html","Css","Javascript"],
+            "class":["html","css","javascript"],
+            "repository":"https://github.com/deimerhdz/text-encryptor",
+            "demo":"https://deimerhdz.github.io/text-encryptor/"
+        },
+        {
+            "img":"./img/project_3.png",
+            "title":"Buscador de peliculas",
+            "description":"Proyecto final del curso aprendiendo angular desde cero.",
+            "tecnologies":["Html","css","Angular"],
+            "class":["html","css","angular"],
+            "repository":"https://github.com/deimerhdz/pelisApp",
+            "demo":"https://tourmaline-creponne-d29957.netlify.app"
+        }
+    ]  
+}

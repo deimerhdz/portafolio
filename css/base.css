@@ -1,0 +1,118 @@
+:root{
+    --font-body: 'Raleway', sans-serif;
+    --bg-font:#fffffe;
+
+    --bg-body:#16161a;
+
+    --bg-primary:#6246ea;
+    --bg-primary-light:#d1d1e9;
+    --bg-body-light:#fffffe;
+
+    --bg-secondary:#242629;
+    --font-size-medium:1.375rem;
+}
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--font-body);
+    color: var(--bg-font);
+    background-color: var(--bg-body);
+}
+.container{
+    max-width: 1224px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.java{
+    background: white;
+    text-decoration: underline #2e6ab2;
+    color: #e52b2e;
+   
+}
+.javascript{
+   background: #efd81d;
+
+   color: black;
+}
+.spring-boot{
+    background: #6cb52d;
+ 
+}
+.html{
+    background: #e86a32;
+ 
+}
+.css{
+    background: #2862e9;
+}
+.angular{
+    background: #b52e31;
+  
+}
+.mb-2{
+    margin-bottom: 2rem;
+}
+
+h2.titulo {
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.titulo{
+    font-weight: bold;
+    margin-bottom: 8px;
+
+    font-size: var(--font-size-medium);
+}
+
+nav.bg-secondary{
+    background: var(--bg-secondary);
+}
+input#nav-check{
+    display: none;
+}
+@media screen and (min-width:0) {
+    .container{
+        width: 100%;
+        padding: 1rem ;
+    }
+    h1.titulo{
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    h3.titulo{
+        font-size: 1.3rem;
+        padding: 0.5rem 0;
+    }
+
+    h2.titulo{
+        font-size: 1.3rem;
+        padding: 1.5rem 0;
+        text-align: center;
+    }
+
+    input#nav-check:checked ~ .nav__list {
+        height: calc(100vh - 50px);
+      
+    }
+
+}
+
+@media screen and (min-width:700px) {
+    .container{
+        width: 80%;
+        padding: 3rem 0;
+    }
+    h1.titulo{
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+        text-align: left;
+    }
+    h3.titulo{
+        text-align: left;
+    }
+   
+}
