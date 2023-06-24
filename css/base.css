@@ -29,27 +29,25 @@ body{
     background: white;
     text-decoration: underline #2e6ab2;
     color: #e52b2e;
-    padding: 0.5rem;
+   
 }
 .javascript{
    background: #efd81d;
-   padding: 0.5rem;
+
    color: black;
 }
 .spring-boot{
     background: #6cb52d;
-    padding: 0.5rem;
+ 
 }
 .html{
     background: #e86a32;
-    padding: 0.5rem;
+ 
 }
 .css{
     background: #2862e9;
-    padding: 0.5rem;
 }
 .angular{
-    padding: 0.5rem;
     background: #b52e31;
   
 }
