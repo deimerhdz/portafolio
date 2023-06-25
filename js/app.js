@@ -108,4 +108,5 @@ $(document).ready(()=>{
     }
     loadSkill();
     loadProject();
+    loadHobbies();
 })
