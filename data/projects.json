@@ -22,7 +22,7 @@
         {
             "img":"./img/project_3.png",
             "title":"Buscador de peliculas",
-            "description":"Proyecto final del curso aprendiendo angular desde cero.",
+            "description":"Este proyecto pongo en practica los fundamentos basicos en angular, como la comunicacion entre componentes, routing, consumo de api rest y mas.",
             "tecnologies":["Html","css","Angular"],
             "class":["html","css","angular"],
             "repository":"https://github.com/deimerhdz/pelisApp",
