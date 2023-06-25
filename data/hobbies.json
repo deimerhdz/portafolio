@@ -1,36 +1,28 @@
 {
     "skills": [    
      {  
-         "icon":"ant-design:html5-filled",
-         "name":"Html5"
+         "icon":"bx:run",
+         "name":"Correr"
      },
      {  
-         "icon":"bxl:css3",
-         "name":"Css3"
+         "icon":"bx:headphone",
+         "name":"Escuchar musica"
      },
      {  
-         "icon":"bxl:javascript",
-         "name":"Javascript"
+         "icon":"fa:television",
+         "name":"Ver series"
      },
      {  
-         "icon":"devicon-plain:angular",
-         "name":"Angular"
+         "icon":"heroicons:language-20-solid",
+         "name":"Aprender idioma"
      },
      {  
-         "icon":"fe:git",
-         "name":"Git"
+         "icon":"material-symbols:camera",
+         "name":"Fotografia"
      },
      {  
-         "icon":"la:java",
-         "name":"Java"
-     }, 
-     {  
-         "icon":"simple-icons:mysql",
-         "name":"Mysql"
-     },  
-     {  
-         "icon":"simple-icons:springboot",
-         "name":"Spring boot"
+         "icon":"material-symbols:videogame-asset",
+         "name":"Video juegos"
      }
     ]
  }
