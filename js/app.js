@@ -21,7 +21,7 @@ $(document).ready(()=>{
 
     function loadSkill(){
         let template = ``;
-        fetch('/data/skill.json')
+        fetch('https://raw.githubusercontent.com/deimerhdz/portafolio/master/data/skill.json')
         .then(data=>data.json())
         .then(({skills})=>{
             skills.forEach(skill => {
@@ -35,6 +35,22 @@ $(document).ready(()=>{
             $('#skills-content').html(template)
         })
     }
+    function loadHobbies(){
+        let template = ``;
+        fetch('https://raw.githubusercontent.com/deimerhdz/portafolio/master/data/hobbies.json')
+        .then(data=>data.json())
+        .then(({hobbies})=>{
+            hobbies.forEach(hobbie => {
+                template += `
+                <div class="skill__item">
+                <iconify-icon  class="skill__icon" icon="${hobbie.icon}"></iconify-icon>
+                <h3 class="skill__titulo">${hobbie.name}</h3>
+                </div>
+                `
+            });
+            $('#pasatiempo-content').html(template)
+        })
+    }
 
     function showTecnologies(tecnologies,classes){
         let template=``;
@@ -46,7 +62,7 @@ $(document).ready(()=>{
     }
     function loadProject(){
         let template = ``;
-        fetch('/data/projects.json')
+        fetch('https://raw.githubusercontent.com/deimerhdz/portafolio/master/data/projects.json')
         .then(data=>data.json())
         .then(({projects})=>{
             projects.forEach((project,i) => {
@@ -92,4 +108,5 @@ $(document).ready(()=>{
     }
     loadSkill();
     loadProject();
+    loadHobbies();
 })

@@ -1,5 +1,15 @@
 {
     "projects":[
+        
+        {
+            "img":"./img/project_4.png",
+            "title":"Api de recetas de cocina",
+            "description":"Este proyecto pongo en practica el manejor de contenedores para despliegue en la nube, usando una instancia ec2 de aws, metodologias como TDD, gitflow y documentacion de api",
+            "tecnologies":["Spring Boot","Docker","Tdd"],
+            "class":["spring-boot","java","docker","aws","tdd"],
+            "repository":"https://github.com/deimerhdz/pelisApp",
+            "demo":"https://tourmaline-creponne-d29957.netlify.app"
+        },
         {
             "img":"./img/project_1.png",
             "title":"Sistema de encuestas",
@@ -7,7 +17,7 @@
             "tecnologies":["Java","Spring Boot","Angular"],
             "class":["java","spring-boot","angular"],
             "repository":"https://github.com/deimerhdz/encuestas-api",
-            "demo":"https://64971258f4f5746ed39b5cc5--cosmic-faloodeh-a9ee8e.netlify.app/"
+            "demo":"https://cosmic-faloodeh-a9ee8e.netlify.app/"
         }
         ,
         {
@@ -22,7 +32,7 @@
         {
             "img":"./img/project_3.png",
             "title":"Buscador de peliculas",
-            "description":"Proyecto final del curso aprendiendo angular desde cero.",
+            "description":"Este proyecto pongo en practica los fundamentos basicos en angular, como la comunicacion entre componentes, routing, consumo de api rest y mas.",
             "tecnologies":["Html","css","Angular"],
             "class":["html","css","angular"],
             "repository":"https://github.com/deimerhdz/pelisApp",
