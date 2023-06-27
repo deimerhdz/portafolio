@@ -31,6 +31,14 @@
     {  
         "icon":"simple-icons:springboot",
         "name":"Spring Boot"
+    },
+    {
+        "icon":"devicon-plain:docker",
+        "name":"docker"
+    },
+    {
+        "icon":"la:aws",
+        "name":"Aws"
     }
    ]
 }

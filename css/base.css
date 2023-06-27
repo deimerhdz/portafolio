@@ -51,6 +51,19 @@ body{
     background: #b52e31;
   
 }
+
+.tdd{
+    background: white;
+    color: #242629;
+}
+.docker{
+   background:  #086dd7;
+}
+.aws{
+    background: #232f3e;
+    text-decoration: underline;
+    text-decoration-color:#f8991d ;
+}
 .mb-2{
     margin-bottom: 2rem;
 }

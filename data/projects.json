@@ -1,5 +1,15 @@
 {
     "projects":[
+        
+        {
+            "img":"./img/project_4.png",
+            "title":"Api de recetas de cocina",
+            "description":"Este proyecto pongo en practica el manejor de contenedores para despliegue en la nube, usando una instancia ec2 de aws, metodologias como TDD, gitflow y documentacion de api",
+            "tecnologies":["Spring Boot","Docker","Tdd"],
+            "class":["spring-boot","java","docker","aws","tdd"],
+            "repository":"https://github.com/deimerhdz/pelisApp",
+            "demo":"https://tourmaline-creponne-d29957.netlify.app"
+        },
         {
             "img":"./img/project_1.png",
             "title":"Sistema de encuestas",
