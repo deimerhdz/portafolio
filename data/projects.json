@@ -4,11 +4,11 @@
         {
             "img":"./img/project_4.png",
             "title":"Api de recetas de cocina",
-            "description":"Este proyecto pongo en practica el manejor de contenedores para despliegue en la nube, usando una instancia ec2 de aws, metodologias como TDD, gitflow y documentacion de api",
+            "description":"Este proyecto pongo en practica el manejo de contenedores para despliegue en la nube, usando una instancia ec2 de aws, metodologias como TDD, gitflow y documentacion de api",
             "tecnologies":["Spring Boot","Docker","Tdd"],
             "class":["spring-boot","java","docker","aws","tdd"],
-            "repository":"https://github.com/deimerhdz/pelisApp",
-            "demo":"https://tourmaline-creponne-d29957.netlify.app"
+            "repository":"https://github.com/deimerhdz/recetas-api",
+            "demo":"http://ec2-54-166-146-174.compute-1.amazonaws.com:8080/swagger-ui/index.html"
         },
         {
             "img":"./img/project_1.png",
