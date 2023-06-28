@@ -3,6 +3,7 @@
     display: flex;
     gap: 2rem;
     margin-top: 3rem;
+    justify-content: space-between;
 }
 .proyecto__item .proyecto__item__info{
     line-height: 2rem;

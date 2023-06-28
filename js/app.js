@@ -85,7 +85,7 @@ $(document).ready(()=>{
                     `
                 }else{
                     template += `
-                    <div class="proyecto__item">
+                    <div class="proyecto__item mb-2">
                     <img class="proyecto__item__imagen" src="${project.img}" alt="${project.title}"/>
                     <div class="proyecto__item__descripcion">
                         <h3 class="titulo">${project.title}</h3>
