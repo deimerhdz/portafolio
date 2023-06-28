@@ -4,7 +4,7 @@
         {
             "img":"./img/project_4.png",
             "title":"Api de recetas de cocina",
-            "description":"Este proyecto pongo en practica el manejo de contenedores para despliegue en la nube, usando una instancia ec2 de aws, metodologias como TDD, gitflow y documentacion de api",
+            "description":"Este proyecto pongo en practica el manejo de contenedores para despliegue en la nube, usando una instancia ec2 de aws, metodologias como TDD y gitflow.",
             "tecnologies":["Spring Boot","Java","Docker","Aws","Tdd"],
             "class":["spring-boot","java","docker","aws","tdd"],
             "repository":"https://github.com/deimerhdz/recetas-api",
