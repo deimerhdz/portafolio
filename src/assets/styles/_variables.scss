@@ -1,0 +1,18 @@
+$colors: (
+    primary: #FB5607,
+    primary-hover: #CD490A,
+    black1: #161513,
+    black2: #1C1C22,
+    white1:#ffffff,
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+$screen-big-desktop: 1440px;
+$screen-desktop: 1024px;
+$screen-tablet: 768px;
+$font-size-big:3rem;
+$font-size-medium:1.372rem;
+

@@ -1,0 +1,9 @@
+<div class="card">
+    <figure class="card__image">
+        <img class="card__image__project" [src]="project.image" [alt]="project.title">
+    </figure>
+    <div class="card__cta">
+        <h4 class="card__title"> <span>{{project.title}}</span> <a title="repositorio" [href]="project.repository" class="text__primary"><i class="fa-solid fa-code"></i></a>  </h4>
+        <a [href]="project.url" class="button button--primary--outline">View demo</a>
+    </div>
+</div>

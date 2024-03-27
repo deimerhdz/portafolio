@@ -1,0 +1,14 @@
+<nav class="nav animate__animated animate__fadeIn">
+    
+    <a class="nav__brand" href="">Deimer</a>
+    <div class="nav__menu">
+        <div class="nav__item"  [ngClass]="{'active': toggle}">
+            <a class="nav__item__link" href="#">Home</a>
+            <a class="nav__item__link" href="#">About me</a> 
+            <a class="nav__item__link" href="#">Projects</a>
+        </div>
+        <a href="" class="button button--primary" id="contact">let's talk</a>
+    </div>
+        
+    <span class="button__toggle" (click)="onToggle()"><i class="fa-solid fa-bars"></i></span>
+</nav>

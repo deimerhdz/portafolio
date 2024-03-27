@@ -1,0 +1,56 @@
+@use "variables.scss" as variables;
+@use "mixins.scss" as mixins;
+
+@use "reset.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background: variables.color(black1);
+    color: variables.color(white1);
+}
+.subtitle{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+.text__primary{
+    color: variables.color(primary);
+}
+.button{
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 14px 20px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    
+    &--primary{
+        color: variables.color(white1);
+        background: variables.color(primary);
+        transition: all .3s ease;
+        &:hover{
+            background: variables.color(primary-hover);
+        }
+        &--outline{
+            background-color: transparent;
+            color: variables.color(primary);
+            border: 1px solid  variables.color(primary);
+            transition: all .3s ease;
+            &:hover{
+                background: variables.color(primary);
+                color: variables.color(black1);
+            }
+        }
+
+    }
+    @include mixins.desktop{
+        padding: 14px 24px;
+    }
+    
+}

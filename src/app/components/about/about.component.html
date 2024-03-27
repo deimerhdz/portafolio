@@ -1,0 +1,18 @@
+<section class="about">
+    <div class="about__description">
+        <h2 class="subtitle">About me</h2>
+        <p class="about__paragraph"> I have 3 year of experience in creating innovative and functional solutions for various projects in the field of web development, in my last job I performed as solutions architect and I had responsibility of design and implement the architecture for an online auction system.</p>
+        <button class="button button--primary--outline">Curriculum</button>
+    </div>
+    <div class="about__skills">
+        <h2 class="subtitle">My skills</h2>
+        <p>Tecnologies  I’ve been working with recently.</p>
+        <div class="about__skills__tecnologies">
+            @for(skill of skills; track skill){
+                <figure class="about__skills__item" [title]="skill.name">
+                    <img class="about__skills__img" [src]="skill.icon" />
+                </figure>
+            }
+        </div>
+    </div>
+</section>

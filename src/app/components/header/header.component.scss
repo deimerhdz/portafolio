@@ -1,0 +1,65 @@
+@use '../../../assets/styles/variables' as variables;
+@use '../../../assets/styles/mixins' as mixins;
+.header{
+    padding-top: 68px;
+    display: flex;
+    height: calc(100% - 68px);
+    flex-direction: column;
+    gap: 32px;
+
+    &__title{
+        font-size: variables.$font-size-big;
+    }
+    &__description{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__paragraph{
+        line-height: 30px;
+    }
+    &__buttons{
+        display: flex;
+        gap: 14px;
+    }
+    &__image{
+        display: flex;
+        width: 100%;
+        img{
+            width: calc(100% - 30px);
+            object-fit: cover;
+            border-radius: 0px 32px 32px 32px;
+            @include mixins.desktop() {
+                width: 440px;
+            }
+        }
+        @include mixins.desktop() {
+            justify-content: flex-end;
+        }
+    }
+    &__socials{
+        display:flex;
+        gap:24px;
+        &__link{
+            font-size: 32px;
+            color: variables.color(white1);
+            opacity: 0.6;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+    @include mixins.desktop() {
+        padding-top: 64px;
+        height: calc(100vh - 68px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.line{
+    width: 30px;
+    height: 136px;
+    background-color: variables.color(primary);
+}

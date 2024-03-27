@@ -1,0 +1,87 @@
+@use '../../../assets/styles/variables' as variables;
+@use '../../../assets/styles/mixins' as mixins;
+
+.nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: variables.color(black2);
+    padding: 12px 16px;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    justify-content: space-between;
+    align-items: center;
+    &__menu{
+       
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__brand{
+        color: variables.color(white1);
+        text-decoration: none;
+        font-size: variables.$font-size-medium;
+    }
+    &__item{
+        display: flex;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: variables.color(black2 );
+        top: -200px;
+        transition: all ease .5s;
+        @include mixins.desktop() {
+            display: flex;
+            position: initial;
+            width: initial;
+            flex-direction: row;
+            gap: 12px;
+        }
+        &__link{
+            color: variables.color(white1);
+            cursor: pointer;
+            text-decoration: none;
+            transition: all .3s ease;
+            text-align: center;
+            padding: 20px 0px;
+            @include mixins.desktop() {
+                padding: 0pk;
+            
+            }
+
+            &:hover{
+                color: variables.color(primary);
+            }
+        }
+    }
+
+    @include mixins.desktop() {
+        padding: 12px 200px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: flex-start;
+        gap: 45px;
+    }
+}
+#contact{
+    align-self: flex-end;
+    display: none;
+    @include mixins.desktop() {
+        display: block;
+    }
+}
+
+.button__toggle{
+    color: variables.color(white1);
+    font-size: variables.$font-size-medium*1.4;
+    @include mixins.desktop() {
+    display: none;
+    }
+}
+.active{
+    top:54px;
+}
+
