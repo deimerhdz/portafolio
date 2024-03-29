@@ -7,6 +7,7 @@ import { Skill } from './interfaces/skills';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { Project } from './interfaces/project';
 import { FooterComponent } from './components/footer/footer.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     AboutComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
