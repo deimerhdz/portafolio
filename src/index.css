@@ -9,9 +9,24 @@
   --color-negro-azulado: #05070f;
 }
 @layer components {
-  /* Ancho y márgenes compartidos por navbar y hero */
+  /*
+   * Alinea el contenido con el bloque de texto del hero: mismo padding lateral
+   * (px-8 / md:px-16 / xl:px-32) y mismo ancho máximo (29rem) que la celda del
+   * hero, que ocupa 50% del ancho en móvil (1 columna) y 25% por lado desde md.
+   * Si cambias esos valores en Hero, cámbialos aquí también.
+   */
   .page-container {
-    @apply mx-auto w-full max-w-[1440px] px-8 md:px-32;
+    padding-inline: max(2rem, calc(50% - 14.5rem));
+  }
+  @media (min-width: 768px) {
+    .page-container {
+      padding-inline: max(4rem, calc(25% - 14.5rem));
+    }
+  }
+  @media (min-width: 1280px) {
+    .page-container {
+      padding-inline: max(8rem, calc(25% - 14.5rem));
+    }
   }
 }
 

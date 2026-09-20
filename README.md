@@ -70,7 +70,7 @@ Definida en [tailwind.config.js](tailwind.config.js):
 
 ### Layout compartido
 
-La clase `page-container` (en [src/index.css](src/index.css)) centra el contenido con un ancho máximo de 1440px y márgenes laterales de `px-8` en móvil y `md:px-32` desde `md`. Se usa en el navbar para que su contenido mantenga los mismos márgenes que el resto de la página.
+La clase `page-container` (en [src/index.css](src/index.css)) da al navbar el mismo padding lateral que el bloque de texto del hero, de modo que el logo queda alineado con el texto y el botón de contacto queda simétrico. Si cambias el padding o el ancho máximo (`max-w-[29rem]`) de la celda izquierda del hero, actualiza también esa clase.
 
 ### Componentes
 
