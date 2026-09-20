@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@theme {
+  --color-azul-noche: #0b0f2b;
+  --color-esmeralda: #3ecf8e;
+  --color-grafito: #1c2033;
+  --color-blanco-hueso: #f5f6f8;
+  --color-negro-azulado: #05070f;
+}
+@layer components {
+  /* Ancho y márgenes compartidos por navbar y hero */
+  .page-container {
+    @apply mx-auto w-full max-w-[1440px] px-8 md:px-32;
+  }
+}
+
+body {
+  /* font-family: "Space Grotesk", sans-serif; */
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.title {
+  font-family: "Space Grotesk", sans-serif;
+}
