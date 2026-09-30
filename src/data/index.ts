@@ -11,8 +11,8 @@ export const PROFILE = {
   image: "/profile.png",
   role: "Ingeniero Full Stack · Arquitecto de Software",
   email: "deimerhdz21@gmail.com",
-  github: "https://github.com/deimerhernandez",
-  linkedin: "https://www.linkedin.com/in/deimerhernandez",
+  github: "https://github.com/deimerhdz",
+  linkedin: "https://www.linkedin.com/in/deimer-hernandez/",
   cvPath: "/Deimer-Hernandez-CV-ATS.pdf",
 } as const;
 
