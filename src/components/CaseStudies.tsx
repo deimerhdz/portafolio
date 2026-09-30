@@ -1,3 +1,4 @@
+import { ImageIcon } from "lucide-react";
 import { CASE_STUDIES } from "../data";
 import { SectionHeading } from "./SectionHeading";
 
@@ -29,6 +30,24 @@ export function CaseStudies() {
                 </div>
 
                 <div>
+                  {project.image ? (
+                    <div className="mb-6 aspect-[16/9] overflow-hidden rounded-md border border-surface">
+                      <img
+                        src={project.image}
+                        alt={`Captura de ${project.title}`}
+                        loading="lazy"
+                        className="h-full w-full object-cover object-top"
+                      />
+                    </div>
+                  ) : (
+                    <div className="mb-6 flex aspect-[16/9] flex-col items-center justify-center gap-3 rounded-md border border-dashed border-surface bg-surface/30">
+                      <ImageIcon className="h-8 w-8 text-muted-foreground/60" />
+                      <span className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
+                        Imagen del proyecto próximamente
+                      </span>
+                    </div>
+                  )}
+
                   <h3 className="font-display text-xl font-bold tracking-tight text-foreground sm:text-2xl">
                     {project.title}
                   </h3>

@@ -5,6 +5,7 @@ import {
   Workflow,
   type LucideIcon,
 } from "lucide-react";
+import brahmanFriendsImage from "../assets/brahman-friends.webp";
 
 export const PROFILE = {
   name: "Deimer Hernandez",
@@ -33,7 +34,7 @@ export type StackPillar = {
 export const STACK_PILLARS: StackPillar[] = [
   {
     id: "react",
-    name: "Angular | React",
+    name: "Angular | React | Nextjs",
     layer: "Frontend",
     description:
       "Interfaces modulares y tipadas, con librerías de diseño internas y rendimiento medible.",
@@ -74,6 +75,7 @@ export type CaseStudy = {
   problem: string;
   solution: string;
   stack: string[];
+  image?: string;
 };
 
 export const CASE_STUDIES: CaseStudy[] = [
@@ -91,17 +93,24 @@ export const CASE_STUDIES: CaseStudy[] = [
     stack: ["Angular", "NestJS", "PostgreSQL", "AWS S3", "Multi-tenant"],
   },
   {
-    id: "concert-plaza",
+    id: "brahman-friends",
     index: "02",
-    title: "Concert Plaza",
-    category: "Marketplace · Ticketing",
+    title: "Brahman friends",
+    category: "Tienda de gorras online",
     summary:
-      "Plataforma de gestión y transferencia de tickets con control transaccional estricto y AWS Cognito.",
+      "E-commerce especializado en productos personalizados para la comunidad ganadera.",
     problem:
-      "Reventa informal y duplicación de entradas sin un mecanismo que garantizara la propiedad real ni el historial de transferencias.",
+      "Las ventas dependían de procesos manuales para mostrar productos, gestionar personalizaciones y atender pedidos, dificultando una experiencia de compra fluida.",
     solution:
-      "Motor de transferencias con control transaccional estricto, estados de ticket auditables y autenticación gestionada con AWS Cognito.",
-    stack: ["Angular", "NestJS", "PostgreSQL", "AWS Cognito", "Transaccional"],
+      "Diseñé y desarrollé una experiencia de e-commerce que combina catálogo de productos, personalización de gorras, pedidos por WhatsApp y solicitudes para compras al por mayor.",
+    stack: [
+      "Nextjs",
+      "Make automation",
+      "NeonDB",
+      "Claudflare",
+      "Spec driven development",
+    ],
+    image: brahmanFriendsImage,
   },
   {
     id: "tauru-pro",
