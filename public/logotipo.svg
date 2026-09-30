@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Fondo Base Dark Mode -->
+  <rect width="500" height="500" fill="#0B1120" rx="40" />
+  
+  <!-- Letra 'd' -->
+  <circle cx="180" cy="280" r="50" stroke="#F8FAFC" stroke-width="24" fill="none" />
+  <line x1="230" y1="180" x2="230" y2="330" stroke="#F8FAFC" stroke-width="24" stroke-linecap="round" />
+  
+  <!-- Letra 'h' -->
+  <line x1="280" y1="180" x2="280" y2="330" stroke="#F8FAFC" stroke-width="24" stroke-linecap="round" />
+  <path d="M 280 270 A 50 50 0 0 1 360 250 L 360 330" stroke="#F8FAFC" stroke-width="24" fill="none" stroke-linecap="round" />
+
+  <!-- Flecha Dinámica Cian (Acento) -->
+  <path d="M 330 230 L 400 160" stroke="#0EA5E9" stroke-width="24" fill="none" stroke-linecap="round" />
+  <path d="M 350 160 L 400 160 L 400 210" stroke="#0EA5E9" stroke-width="24" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
