@@ -6,7 +6,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import brahmanFriendsImage from "../assets/brahman-friends.webp";
-
+import skeiloImage from "../assets/skeilo.webp";
 export const PROFILE = {
   name: "Deimer Hernandez",
   image: "/profile.png",
@@ -66,6 +66,8 @@ export const STACK_PILLARS: StackPillar[] = [
   },
 ];
 
+export type CaseStudyStatus = "in-progress" | "completed";
+
 export type CaseStudy = {
   id: string;
   index: string;
@@ -76,6 +78,8 @@ export type CaseStudy = {
   solution: string;
   stack: string[];
   image?: string;
+  demoUrl?: string;
+  status: CaseStudyStatus;
 };
 
 export const CASE_STUDIES: CaseStudy[] = [
@@ -91,6 +95,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     solution:
       "Plataforma multi-tenant con aislamiento de datos por cliente, integración de pasarelas de pago y almacenamiento en la nube para tickets, catálogos y reportes.",
     stack: ["Angular", "NestJS", "PostgreSQL", "AWS S3", "Multi-tenant"],
+    image: skeiloImage,
+    demoUrl: "https://www.skeilopos.com/",
+    status: "in-progress",
   },
   {
     id: "brahman-friends",
@@ -111,17 +118,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       "Spec driven development",
     ],
     image: brahmanFriendsImage,
-  },
-  {
-    id: "tauru-pro",
-    index: "03",
-    title: "Tauru Pro",
-    category: "Marketplace B2B · Logística",
-    summary: "Marketplace de logística de cadena de frío y e-commerce B2B.",
-    problem:
-      "Operadores de cadena de frío y compradores B2B sin un canal común para cotizar, contratar y seguir envíos con requisitos de temperatura.",
-    solution:
-      "Marketplace B2B con catálogo de capacidades logísticas, flujo de cotización y contratación, y trazabilidad de envíos en frío.",
-    stack: ["Angular", "NestJS", "PostgreSQL", "AWS", "E-commerce B2B"],
+    demoUrl: "https://brahman-friends.bfcaps26.workers.dev/en",
+    status: "completed",
   },
 ];

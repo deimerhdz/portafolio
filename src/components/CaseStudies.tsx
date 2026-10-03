@@ -1,6 +1,17 @@
-import { ImageIcon } from "lucide-react";
-import { CASE_STUDIES } from "../data";
+import { ExternalLink, ImageIcon } from "lucide-react";
+import { CASE_STUDIES, type CaseStudyStatus } from "../data";
 import { SectionHeading } from "./SectionHeading";
+
+const STATUS_BADGE: Record<CaseStudyStatus, { label: string; className: string }> = {
+  "in-progress": {
+    label: "En progreso",
+    className: "border-amber-400/40 bg-amber-400/10 text-amber-400",
+  },
+  completed: {
+    label: "Finalizado",
+    className: "border-emerald-400/40 bg-emerald-400/10 text-emerald-400",
+  },
+};
 
 export function CaseStudies() {
   return (
@@ -48,9 +59,17 @@ export function CaseStudies() {
                     </div>
                   )}
 
-                  <h3 className="font-display text-xl font-bold tracking-tight text-foreground sm:text-2xl">
-                    {project.title}
-                  </h3>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <h3 className="font-display text-xl font-bold tracking-tight text-foreground sm:text-2xl">
+                      {project.title}
+                    </h3>
+                    <span
+                      className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-medium ${STATUS_BADGE[project.status].className}`}
+                    >
+                      <span className="h-1.5 w-1.5 rounded-full bg-current" aria-hidden />
+                      {STATUS_BADGE[project.status].label}
+                    </span>
+                  </div>
                   <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
                     {project.summary}
                   </p>
@@ -84,6 +103,18 @@ export function CaseStudies() {
                       </li>
                     ))}
                   </ul>
+
+                  {project.demoUrl && (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                    >
+                      Ver demo
+                      <ExternalLink size={16} aria-hidden />
+                    </a>
+                  )}
                 </div>
               </div>
             </article>
