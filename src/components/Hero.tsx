@@ -1,4 +1,4 @@
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { HERO_FOCUS, PROFILE } from "../data";
 
 export const Hero = () => {
@@ -36,14 +36,14 @@ export const Hero = () => {
                 Ver Proyectos
                 <ArrowRight size={16} aria-hidden />
               </a>
-              <a
+              {/* <a
                 href={PROFILE.cvPath}
                 download
                 className="inline-flex items-center gap-2 rounded-md border border-surface px-5 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 Descargar CV ATS
                 <Download size={16} aria-hidden />
-              </a>
+              </a> */}
             </div>
           </div>
 
